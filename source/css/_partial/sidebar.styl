@@ -1,8 +1,8 @@
 #sidebar
     @media mq-normal
         column(sidebar-column)
-    @media mq-tablet
-        column(sidebar-column-tablet)
+        if sidebar is right
+          float: right
 
 .widget
     @extend $base-style
